@@ -1,2 +1,2 @@
 # Ziru "Ron" Chen's Homepage
-Last updated: 08/04/2020
+Last updated: 08/17/2020
