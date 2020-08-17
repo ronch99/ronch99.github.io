@@ -27,6 +27,12 @@ body {
 	border-radius: 8px;
 }
 
+.photo img {
+  width: 180px;
+  border-radius: 150px;
+  margin-bottom: 10px;
+}
+
 .content {
 	padding-left: 12px;
 	padding-right: 12px;
