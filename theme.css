@@ -30,6 +30,7 @@ body {
 .intro {
 	width: 150px;
 	text-align: center;
+	margin-left: 20px;
 	margin-bottom: 5px;
 	font-size: 0.8em;
 	color:#666666;
