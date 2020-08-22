@@ -27,6 +27,15 @@ body {
 	border-radius: 8px;
 }
 
+.intro {
+  display: inline-block;
+  width: 175px;
+  text-align: center;
+  margin-right: 20px;
+  margin-bottom: 5px;
+  font-size: 1.0em;
+}
+
 .photo img {
   width: 150px;
   border-radius: 125px;
