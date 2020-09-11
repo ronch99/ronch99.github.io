@@ -58,7 +58,7 @@ img.displayed {
 	display: block;
 	margin-right: auto;
 	margin-left: auto;
-	width: 300px;
+	width: 320px;
 }
 
 ul {
@@ -81,4 +81,6 @@ ul.pub {
 	border-radius: 25px;
 	padding-right: 15px;
 	padding-left: 15px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
