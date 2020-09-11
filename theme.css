@@ -76,10 +76,9 @@ ul.pub {
 }
 
 .boxed {
-    color: #171717;
-    border:1px solid #dddddd;
-    margin-bottom: 15px;
-    border-radius:25px;
-    padding-right: 15px;
+	border:1px solid #dddddd;
+	margin-bottom: 15px;
+	border-radius: 25px;
+	padding-right: 15px;
 	padding-left: 15px;
 }
