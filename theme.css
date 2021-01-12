@@ -90,3 +90,8 @@ ul.pub {
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
+
+.boxed img {
+	width: 400px;
+}
+
