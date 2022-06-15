@@ -38,8 +38,9 @@ h3 {
   grid-row-gap: 10px;
   grid-template-areas:
     "title title title"
-    "news research research"
+    "news awards awards"
     "news teaching teaching"
+    "research research research"
     "tmi tmi tmi";
 }
 
@@ -57,7 +58,15 @@ h3 {
 
 .news {
   grid-area: news;
-  overflow: hidden;
+}
+
+#newslist{
+  max-height: 290px; 
+  overflow-y: scroll;
+}
+
+.awards {
+  grid-area: awards;
 }
 
 .research {
