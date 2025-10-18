@@ -85,51 +85,57 @@
           <a href="https://twitter.com/RonZiruChen">@RonZiruChen</a> <br />
           <br />
 
-          I am a Ph.D. student at
-          <a href="https://u.osu.edu/ihudas/people/">OSU SunLab</a> advised by
-          Prof. <a href="http://web.cse.ohio-state.edu/~sun.397/">Huan Sun</a>.
-          My research focuses on <i>Natural Language Processing</i>,
-          <i>Conversational AI</i>, and <i>Machine Learning</i>. I'm
-          particularly interested in developing practical, reliable, and
-          generalizable language agents that can accomplish real-world tasks by
-          processing heterogeneous data, planning and reasoning in programs, and
-          collaborating with users:<br />
+          I am a Ph.D. student advised by Dr.
+          <a href="https://u.osu.edu/ihudas/people/">Huan Sun</a>. My research
+          focuses on <i>Conversational AI Agents</i>,
+          <i>Natural Language Processing</i>, and <i>Machine Learning</i>, with
+          an emphasis on the following two areas:<br />
           <ul>
             <li>
-              My approach to LLM research is to treat the models as black-boxs
-              and study their behaviors by manipulating data, training
-              algorithms, and inference methods. Recently, I am actively
-              thinking about improving LLMs'
-              <strong>inference-time computation</strong>, such as iterative
-              refinement, tree search, and hierarchical planning.
+              <strong>Post-training and Test-Time Computation of LLMs</strong>:
+              While large language models (LLMs) have demonstrated great
+              success, one concensus between theoretical and empirical research
+              is that they need enough test-time computation to perform complex
+              reasoning and planning. With chain-of-thought
+              <a href="https://arxiv.org/abs/2305.14215">[EMNLP'23]</a> or
+              program-of-thought
+              <a href="https://arxiv.org/abs/2305.13073">[ACL'23]</a>, LLMs can
+              effectively extend their "thinking" to solve more challenging
+              tasks and even win gold medals in international olympiads
+              <a href="https://arxiv.org/abs/2510.05016">[Arxiv'25a]</a>. Before
+              reinforcement learning with verifiable rewards (RLVR) becomes a
+              prevalent paradigm, my research has already highlighted
+              verification as a key factor in scaling LLMs' test-time
+              computation
+              <a href="https://arxiv.org/abs/2402.10890">[ACL'24]</a>, including
+              parallel scaling (e.g., sampling) and recurrent scaling (e.g.,
+              searching). With recent advances in RLVR, I am exploring new
+              post-training methods to further enhance LLMs' test-time
+              computation capabilities toward self-evolving AI models.
             </li>
             <li>
-              I prefer
-              <strong
-                >principled agent designs that are simple, effective, and
-                cost-efficient</strong
-              >
-              over complex frameworks with many modules and pipelines. I believe
-              we should grasp a decent understanding of each component and
-              method, e.g. discriminator, grounding unit, and planning method,
-              before incorporating them into an agent.
-            </li>
-            <li>
-              The development of language agents is never a one-time effort. I'm
-              interested in developing new algorithms that enable agents to
-              <strong
-                >continually learn from human, AI, and environment
-                feedback</strong
-              >, generalize beyond their initial training corpus, and provide
-              personalized experiences for their users.
+              <strong>Language Agents for Coding and Data Analysis</strong>: I
+              have been developing task-oriented conversational AI systems
+              <a href="https://arxiv.org/abs/2207.05223">[AlexaPrize'22]</a>
+              before the advent of LLMs and language agents. I am particularly
+              interested in building language agents that can perform complex
+              coding and data analysis tasks in real-world scenarios, such as
+              database management
+              <a href="https://arxiv.org/abs/2305.13073">[ACL'23]</a
+              ><a href="https://arxiv.org/abs/2305.14215">[EMNLP'23]</a> and
+              scientific discovery
+              <a href="https://arxiv.org/abs/2410.05080">[ICLR'25]</a>
+              <a href="https://arxiv.org/abs/2506.08140">[EMNLP'25]</a>.
+              Currently, I am actively thinking about three future directions of
+              language agent research: (1) rigorous and holistic evaluation of
+              agents in ecologically valid settings
+              <a href="https://arxiv.org/abs/2510.11977">[Arxiv'25b]</a>; (2)
+              principled and cost-efficient agent scaffold designs for data
+              synthesis and model training <a href="#">[Arxiv'25c]</a>; and (3)
+              continual learning and adaptation in dynamic, user-involved
+              environments.
             </li>
           </ul>
-          I am also interested in human languages themselves. So far, I can
-          speak Chinese, English, Japanese (JLPT N2), and some elementary
-          Korean. <br />
-          My favorite quote is “Cogito, ergo sum.” (or in English, “I think.
-          Therefore, I am.”) by René Descartes.
-          <br />
           <!--
           <br />
           <embed
@@ -167,6 +173,20 @@
             <br />
             -->
             <ul>
+              <li>
+                10/2025: Three new preprints on agent evaluation and training:
+                <a href="https://arxiv.org/abs/2510.11977"
+                  >Holistic Agent Leaderboard</a
+                >, <a href="https://arxiv.org/abs/2510.05016">LLMs at IOAA</a>,
+                and <a href="#">Agent Data Protocol</a>.
+              </li>
+              <li>
+                09/2025: Two follow-up papers on ScienceAgentBench:
+                <a href="https://arxiv.org/abs/2506.08140">AutoSDT</a> is
+                accepted at EMNLP 2025;
+                <a href="https://arxiv.org/abs/2509.05881">GeoAnalystBench</a>
+                is accepted at TGIS 2025.
+              </li>
               <li>
                 01/2025:
                 <a href="https://osu-nlp-group.github.io/ScienceAgentBench/"
@@ -297,6 +317,75 @@
           <br /><br />
           <ul>
             <li>
+              <a href="https://arxiv.org/abs/2510.11977">
+                <i
+                  >Holistic Agent Leaderboard: The Missing Infrastructure for AI
+                  Agent Evaluation</i
+                >
+              </a>
+              <br />
+              Sayash Kapoor, Benedikt Stroebl, Peter Kirgis, Nitya Nadgir,
+              Zachary S Siegel, Boyi Wei, Tianci Xue,
+              <strong>Ziru Chen</strong>, Felix Chen, Saiteja Utpala, Franck
+              Ndzomga, Dheeraj Oruganty, Sophie Luskin, Kangheng Liu, Botao Yu,
+              Amit Arora, Dongyoon Hahm, Harsh Trivedi, Huan Sun, Juyong Lee,
+              Tengjun Jin, Yifan Mai, Yifei Zhou, Yuxuan Zhu, Rishi Bommasani,
+              Daniel Kang, Dawn Song, Peter Henderson, Yu Su, Percy Liang,
+              Arvind Narayanan <br />
+              Arxiv Preprint (Arxiv 2025, Long)
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="https://arxiv.org/abs/2510.05016">
+                <i
+                  >Large Language Models Achieve Gold Medal Performance at the
+                  International Olympiad on Astronomy & Astrophysics (IOAA)</i
+                >
+              </a>
+              <br />
+              Lucas Carrit Delgado Pinheiro*, <strong>Ziru Chen</strong>*, Bruno
+              Caixeta Piazza, Ness Shroff, Yingbin Liang, Yuan-Sen Ting, Huan
+              Sun (* equal contribution) <br />
+              Arxiv Preprint (Arxiv 2025, Long)
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="#">
+                <i
+                  >Agent Data Protocol: Unifying Datasets for Diverse, Effective
+                  Fine-tuning of LLM Agents</i
+                >
+              </a>
+              <br />
+              Yueqi Song, Ketan Ramaneti, Zaid Sheikh,
+              <strong>Ziru Chen</strong>, Boyu Gou, Tianbao Xie, Yiheng Xu,
+              Danyang Zhang, Apurva Gandhi, Fan Yang, Joseph Liu, Tianyue Ou,
+              Zhihao Yuan, Frank F. Xu, Shuyan Zhou, Xingyao Wang, Xiang Yue,
+              Tao Yu, Huan Sun, Yu Su, Graham Neubig <br />
+              Arxiv Preprint (Arxiv 2025, Long)
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="https://arxiv.org/abs/2506.08140">
+                <i
+                  >AutoSDT: Scaling Data-Driven Discovery Tasks Toward Open
+                  Co-Scientists</i
+                >
+              </a>
+              <br />
+              Yifei Li*, Hanane Nour Moussa*, <strong>Ziru Chen</strong>, Shijie
+              Chen, Botao Yu, Mingyi Xue, Benjamin Burns, Tzu-Yao Chiu, Vishal
+              Dey, Zitong Lu, Chen Wei, Qianheng Zhang, Tianyu Zhang, Song Gao,
+              Xuhui Huang, Xia Ning, Nesreen K. Ahmed, Ali Payani, Huan Sun (*
+              equal contribution) <br />
+              EMNLP 2025 (Long)
+            </li>
+          </ul>
+          <ul>
+            <li>
               <a href="https://arxiv.org/abs/2410.05080"
                 ><i
                   >ScienceAgentBench: Toward Rigorous Assessment of Language
@@ -314,8 +403,7 @@
               Sun <br />
               ICLR 2025 (Long) <br />
               <strong>News Coverage:</strong>
-              <a
-                href="https://doi.org/10.1038/d41586-025-00275-0"
+              <a href="https://doi.org/10.1038/d41586-025-00275-0"
                 >[Nature News]</a
               >
             </li>
@@ -459,11 +547,14 @@
           >
           <br />
           I was born on Thanksgiving that year. <br />
-          My first name in Japanese sounds like "to wash feet" in Chinese.
+          I can speak Chinese, English, Japanese (JLPT N2), and some elementary
+          Korean. My first name in Japanese ("shì-jō") sounds like "feet
+          washing" ("shee jow") in Chinese.
           <br />
           My MBTI is
           <a href="https://www.16personalities.com/intj-personality">INTJ</a>.
-          <br />
+          My favorite quote is “Cogito, ergo sum.” (“I think. Therefore, I am.”)
+          by René Descartes. <br />
           <br /><br />
         </div>
       </div>
