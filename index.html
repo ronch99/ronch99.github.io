@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
@@ -94,7 +94,7 @@
             <li>
               <strong>Post-training and Test-Time Computation of LLMs</strong>:
               While large language models (LLMs) have demonstrated great
-              success, one concensus between theoretical and empirical research
+              success, one consensus between theoretical and empirical research
               is that they need enough test-time computation to perform complex
               reasoning and planning. With chain-of-thought
               <a href="https://arxiv.org/abs/2305.14215">[EMNLP'23]</a> or
@@ -102,16 +102,17 @@
               <a href="https://arxiv.org/abs/2305.13073">[ACL'23]</a>, LLMs can
               effectively extend their "thinking" to solve more challenging
               tasks and even win gold medals in international olympiads
-              <a href="https://arxiv.org/abs/2510.05016">[Arxiv'25a]</a>. Before
+              <a href="https://arxiv.org/abs/2510.05016">[Arxiv'25]</a>. Before
               reinforcement learning with verifiable rewards (RLVR) becomes a
               prevalent paradigm, my research has already highlighted
               verification as a key factor in scaling LLMs' test-time
               computation
               <a href="https://arxiv.org/abs/2402.10890">[ACL'24]</a>, including
               parallel scaling (e.g., sampling) and recurrent scaling (e.g.,
-              searching). With recent advances in RLVR, I am exploring new
-              post-training methods to further enhance LLMs' test-time
-              computation capabilities toward self-evolving AI models.
+              searching). With recent advances in RLVR, I have turned my
+              insights into a contextual bandit learning method to to further
+              enhance LLMs' test-time computation and train self-correcting LMs
+              of code <a href="https://arxiv.org/abs/2602.03806">[Arxiv'26]</a>.
             </li>
             <li>
               <strong>Language Agents for Coding and Data Analysis</strong>: I
@@ -129,9 +130,10 @@
               Currently, I am actively thinking about three future directions of
               language agent research: (1) rigorous and holistic evaluation of
               agents in ecologically valid settings
-              <a href="https://arxiv.org/abs/2510.11977">[Arxiv'25b]</a>; (2)
+              <a href="https://arxiv.org/abs/2510.11977">[ICLR'26a]</a>; (2)
               principled and cost-efficient agent scaffold designs for data
-              synthesis and model training <a href="https://arxiv.org/abs/2510.24702">[Arxiv'25c]</a>; and (3)
+              synthesis and model training
+              <a href="https://arxiv.org/abs/2510.24702">[ICLR'26b]</a>; and (3)
               continual learning and adaptation in dynamic, user-involved
               environments.
             </li>
@@ -174,11 +176,31 @@
             -->
             <ul>
               <li>
+                02/2026: New
+                <a href="https://arxiv.org/abs/2602.03806">preprint</a>
+                on training self-correcting language models of code via
+                contextual bandit learning.
+              </li>
+              <li>
+                01/2026:
+                <a href="https://arxiv.org/abs/2510.11977"
+                  >Holistic Agent Leaderboard</a
+                >
+                and
+                <a href="https://arxiv.org/abs/2510.24702"
+                  >Agent Data Protocol</a
+                >
+                are accepted at ICLR 2026.
+              </li>
+              <li>
                 10/2025: Three new preprints on agent evaluation and training:
                 <a href="https://arxiv.org/abs/2510.11977"
                   >Holistic Agent Leaderboard</a
                 >, <a href="https://arxiv.org/abs/2510.05016">LLMs at IOAA</a>,
-                and <a href="https://arxiv.org/abs/2510.24702">Agent Data Protocol</a>.
+                and
+                <a href="https://arxiv.org/abs/2510.24702"
+                  >Agent Data Protocol</a
+                >.
               </li>
               <li>
                 09/2025: Two follow-up papers on ScienceAgentBench:
@@ -317,15 +339,29 @@
           <br /><br />
           <ul>
             <li>
+              <a href="https://arxiv.org/abs/2602.03806">
+                <i
+                  >Bridging Online and Offline RL: Contextual Bandit Learning
+                  for Multi-Turn Code Generation</i
+                >
+              </a>
+              <a href="https://github.com/OSU-NLP-Group/cobalt">[Code & Data]</a>
+              <br />
+              <strong>Ziru Chen</strong>, Dongdong Chen, Ruinan Jin, Yingbin
+              Liang, Yujia Xie<sup>+</sup>, Huan Sun<sup>+</sup> (<sup>+</sup>
+              equal advising) <br />
+              Arxiv Preprint (Long)
+            </li>
+          </ul>
+          <ul>
+            <li>
               <a href="https://arxiv.org/abs/2510.11977">
                 <i
                   >Holistic Agent Leaderboard: The Missing Infrastructure for AI
                   Agent Evaluation</i
                 >
               </a>
-              <a href="https://hal.cs.princeton.edu/"
-                >[Website]</a
-              >
+              <a href="https://hal.cs.princeton.edu/">[Website]</a>
               <br />
               Sayash Kapoor, Benedikt Stroebl, Peter Kirgis, Nitya Nadgir,
               Zachary S Siegel, Boyi Wei, Tianci Xue,
@@ -335,7 +371,25 @@
               Tengjun Jin, Yifan Mai, Yifei Zhou, Yuxuan Zhu, Rishi Bommasani,
               Daniel Kang, Dawn Song, Peter Henderson, Yu Su, Percy Liang,
               Arvind Narayanan <br />
-              Arxiv Preprint (Arxiv 2025, Long)
+              ICLR 2026 (Long)
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="https://arxiv.org/abs/2510.24702">
+                <i
+                  >Agent Data Protocol: Unifying Datasets for Diverse, Effective
+                  Fine-tuning of LLM Agents</i
+                >
+              </a>
+              <a href="https://www.agentdataprotocol.com/">[Website]</a>
+              <br />
+              Yueqi Song, Ketan Ramaneti, Zaid Sheikh,
+              <strong>Ziru Chen</strong>, Boyu Gou, Tianbao Xie, Yiheng Xu,
+              Danyang Zhang, Apurva Gandhi, Fan Yang, Joseph Liu, Tianyue Ou,
+              Zhihao Yuan, Frank F. Xu, Shuyan Zhou, Xingyao Wang, Xiang Yue,
+              Tao Yu, Huan Sun, Yu Su, Graham Neubig <br />
+              ICLR 2026 (Long)
             </li>
           </ul>
           <ul>
@@ -350,28 +404,12 @@
               Lucas Carrit Delgado Pinheiro*, <strong>Ziru Chen</strong>*, Bruno
               Caixeta Piazza, Ness Shroff, Yingbin Liang, Yuan-Sen Ting, Huan
               Sun (* equal contribution) <br />
-              Arxiv Preprint (Arxiv 2025, Long)
+              Arxiv Preprint (Long)
             </li>
-          </ul>
-          <ul>
-            <li>
-              <a href="https://arxiv.org/abs/2510.24702">
-                <i
-                  >Agent Data Protocol: Unifying Datasets for Diverse, Effective
-                  Fine-tuning of LLM Agents</i
-                >
-              </a>
-              <a href="https://www.agentdataprotocol.com/"
-                >[Website]</a
-              >
-              <br />
-              Yueqi Song, Ketan Ramaneti, Zaid Sheikh,
-              <strong>Ziru Chen</strong>, Boyu Gou, Tianbao Xie, Yiheng Xu,
-              Danyang Zhang, Apurva Gandhi, Fan Yang, Joseph Liu, Tianyue Ou,
-              Zhihao Yuan, Frank F. Xu, Shuyan Zhou, Xingyao Wang, Xiang Yue,
-              Tao Yu, Huan Sun, Yu Su, Graham Neubig <br />
-              Arxiv Preprint (Arxiv 2025, Long)
-            </li>
+            <strong>News Coverage:</strong>
+            <a href="https://x.com/gdb/status/1977052555898482727?s=20"
+              >[OpenAI]</a
+            >
           </ul>
           <ul>
             <li>
@@ -389,6 +427,11 @@
               equal contribution) <br />
               EMNLP 2025 (Long)
             </li>
+            <strong>Best Paper Award</strong
+            >,
+            <a href="https://x.com/hhsun1/status/1976991647092138197?s=20"
+              >The first LLM for Scientific Discovery Workshop at COLM 2025</a
+            >
           </ul>
           <ul>
             <li>
@@ -414,6 +457,7 @@
               >
             </li>
           </ul>
+          <!--
           <ul>
             <li>
               <a href="https://arxiv.org/abs/2411.07228"
@@ -429,6 +473,7 @@
               Findings of NAACL 2025 (Short)
             </li>
           </ul>
+          -->
           <ul>
             <li>
               <a href="https://arxiv.org/abs/2402.10890"
@@ -462,6 +507,7 @@
               ICML 2024 (Long)
             </li>
           </ul>
+          <!--
           <ul>
             <li>
               <a href="https://arxiv.org/abs/2305.13683"
@@ -477,6 +523,7 @@
               Findings of EMNLP 2023 (Long)
             </li>
           </ul>
+          -->
           <ul>
             <li>
               <a href="https://arxiv.org/abs/2305.14215"
